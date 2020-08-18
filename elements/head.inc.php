@@ -1,9 +1,3 @@
-<?php 
-Conection :: openConection();
-$totalUsers = userRepository :: getUserCount(Conection::getConection());
-Conection :: closeConection();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

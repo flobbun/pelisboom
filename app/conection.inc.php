@@ -1,33 +1,22 @@
 <?php
 
-class Conection {
-    private static $conection;
 
-    public static function openConection(){
-        if(!isset(self::$conection)){
-            try {
-                include_once 'config.inc.php';
+$conection; 
 
-                self::$conection = new PDO($link ,$username, $password);
-                self::$conection -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                self::$conection -> exec("SET CHARACTER SET utf8");
+$bLink = 'mysql:host=localhost;dbname=pelisboom';
+$bUser = 'root';
+$bPass = 'root';
 
-            } catch (PDOException $ex) {
-               print "ERROR " . $ex -> getMessage() . "<br>";
-               die();   
-            }
-        }
-    }
-    
-    public static function closeConection(){
-        if(isset(self::$conection)){
-            self::$conection = null;
-        }
-    }
 
-    public static function getConection(){
-        return self::$conection;
-    }
-
+try
+{
+    $conection = new PDO($bLink, $bUser, $bPass);
+    $conection -> exec("SET CHARACTER SET utf8");  
 
 }
+catch(PDOException $ex)
+{
+    echo "ERROR " . $ex -> getMessage();
+    die();
+}
+
