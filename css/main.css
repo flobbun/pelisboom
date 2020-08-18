@@ -1,0 +1,81 @@
+/*Vars*/
+/*Colors*/
+/******/
+/*----*/
+/*---------MAIN CONTAINERS-------*/
+body #superContainer {
+  background-color: black; }
+
+#mainHeader {
+  background-color: #00466A; }
+
+#mainSection {
+  background-color: #08212F; }
+
+/*---------HEADER-------*/
+header {
+  padding: 8px;
+  font-family: "Inconsolata", monospace; }
+  header h1 {
+    font-family: "Lemonada", cursive; }
+  header nav {
+    background-color: #08212F;
+    border-radius: 20px;
+    padding: 8px; }
+    header nav li {
+      padding: 8px;
+      margin: 0px 8px;
+      border: 1px solid black;
+      border-radius: 20px; }
+      header nav li input {
+        border-radius: 20px;
+        border-style: none;
+        padding: 4px;
+        text-align: center; }
+      header nav li a {
+        color: #169fee; }
+      header nav li a:hover {
+        text-decoration: none; }
+      header nav li .icon {
+        width: 40px;
+        height: 30px; }
+
+/*---------MAIN SECTION-------*/
+#mainSection {
+  border-radius: 20px;
+  font-family: "Inconsolata", monospace;
+  padding: 8px; }
+  #mainSection #mainSectionMovies {
+    padding: 8px; }
+    #mainSection #mainSectionMovies .coverDiv {
+      margin: 12px; }
+      #mainSection #mainSectionMovies .coverDiv img {
+        width: 240px;
+        height: 300px; }
+    #mainSection #mainSectionMovies .coverDiv:hover {
+      border: 3px solid #00466A; }
+    #mainSection #mainSectionMovies .topicHeader {
+      padding-left: 16px;
+      width: 100%; }
+      #mainSection #mainSectionMovies .topicHeader h6 {
+        font-family: "Lemonada", cursive; }
+      #mainSection #mainSectionMovies .topicHeader a {
+        padding-left: 20px;
+        color: #169fee; }
+      #mainSection #mainSectionMovies .topicHeader a:hover {
+        text-decoration: none;
+        color: white; }
+  #mainSection #mainAside {
+    padding: 8px; }
+    #mainSection #mainAside li {
+      list-style: none;
+      border-bottom: 1px solid;
+      text-align: left;
+      width: 150px; }
+      #mainSection #mainAside li a {
+        color: #169fee; }
+      #mainSection #mainAside li a:hover {
+        text-decoration: none;
+        color: white; }
+
+/*# sourceMappingURL=main.css.map */

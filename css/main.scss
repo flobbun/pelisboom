@@ -1,0 +1,134 @@
+/*Vars*/
+ /*Colors*/
+$bgcolor1: #00466A;
+$bgcolor2: #08212F;
+$color1: rgb(22, 159, 238);
+/******/
+$font1: 'Inconsolata', monospace;
+$font2: 'Lemonada', cursive;
+
+$radius: 20px;
+$padding: 8px;
+/*----*/
+
+/*---------MAIN CONTAINERS-------*/
+body{
+    #superContainer{
+        background-color: black;
+
+    }
+}
+
+#mainHeader{
+    background-color: $bgcolor1;
+}
+#mainSection{
+    background-color: $bgcolor2;
+}
+#mainFooter{
+    footer{
+       
+            font-family: $font1;
+
+      
+    }
+}
+
+/*---------HEADER-------*/
+header{
+    padding: $padding;
+    font-family: $font1;
+
+    h1{
+        font-family: $font2;
+    }
+
+    nav{
+        background-color: $bgcolor2;
+        border-radius: $radius;
+        padding: $padding;
+        li{
+            padding: $padding;
+            margin: 0px 8px;
+            border: 1px solid black;
+            border-radius: $radius;
+            
+            
+            input{
+                border-radius: $radius;
+                border-style: none;
+                padding: $padding - 4;
+                text-align: center;
+            }
+            a{
+                color: $color1;
+            }a:hover{
+                text-decoration: none;
+               
+            }
+            .icon{
+                width: 40px;
+                height: 30px;
+            }
+
+        }
+    }
+
+}
+/*---------MAIN SECTION-------*/
+#mainSection{
+    border-radius: $radius;
+    font-family: $font1;
+    padding: $padding;
+
+    #mainSectionMovies{
+        padding: $padding;
+
+        .coverDiv{
+            margin: 12px;
+            img{
+                width: 240px;
+                height: 300px;
+            }
+        }
+        .coverDiv:hover{
+            border: 3px solid $bgcolor1;
+        }
+
+        .topicHeader{
+            padding-left: $padding + 8;
+            width: 100%;
+            h6{
+                font-family: $font2;
+            }
+    
+            a{
+                padding-left: 20px;
+                color: $color1;
+            }a:hover{
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+
+    }
+
+    #mainAside{
+        padding: $padding;
+
+        li{
+            list-style: none;
+            border-bottom: 1px solid;
+            text-align: left;
+            width: 150px;
+
+            a{
+                color: $color1;
+            }a:hover{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
