@@ -85,10 +85,27 @@ header{
         padding: $padding;
 
         .coverDiv{
-            margin: 12px;
+            padding: 10px;
+            justify-content: center;
             img{
                 width: 240px;
                 height: 300px;
+            }
+            p{
+                font-size: 20px;
+                width: 200px;
+                position: absolute;
+            }
+            small{
+                color: rgb(197, 27, 27);
+                font-size: 12px;
+                text-transform: uppercase;
+                border: 1px solid red;
+                padding-right: 10px;
+                position: absolute;
+                margin-left: 20px;
+                margin-top: 10px;
+                
             }
         }
         .coverDiv:hover{

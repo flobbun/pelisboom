@@ -37,65 +37,31 @@ include_once 'elements/header.inc.php';
         <div class="container col-lg-9" id="mainSectionMovies">
 
             <section>
-                <div class="row text-light p-2">
+                <div class="row text-light p-2 movieContainer col-lg-12" id="moviePremieres">
                     <div class="row topicHeader">
                         <h6 class="p-1">Premieres</h6>
                         <a href="#">See everything</a>
                     </div>
 
- 
-                    <div class="coverDiv">
-                        <img src="img/exemple.jpeg" alt="">
-                    </div>
-                    <div class="coverDiv">
-                        <img src="img/exemple.jpeg" alt="">
-                    </div>
-                    <div class="coverDiv">
-                        <img src="img/exemple.jpeg" alt="">
-                    </div>
 
                 </div>  
             </section>
             
             <section>
-                <div class="row text-light p-2">
+                <div class="row text-light p-2 movieContainer" id="movieClassics">
                     <div class="row topicHeader">
                         <h6 class="p-1">Classics</h6>
                         <a href=""></a>
                     </div>
-
-                    
-                    <div class="coverDiv">
-                        <img src="img/exemple.jpeg" alt="">
-                    </div>
-                    <div class="coverDiv">
-                        <img src="img/exemple.jpeg" alt="">
-                    </div>
-                    <div class="coverDiv">
-                        <img src="img/exemple.jpeg" alt="">
-                    </div>
-
                 </div>  
             </section>
 
             <section>
-                <div class="row text-light p-2">
+                <div class="row text-light p-2 movieContainer" id="movieReleases">
                     <div class="row topicHeader">
                         <h6 class="p-1">Next releases</h6>
                         <a href=""></a>
                     </div>
-
-                    
-                    <div class="coverDiv">
-                        <img src="img/exemple.jpeg" alt="">
-                    </div>
-                    <div class="coverDiv">
-                        <img src="img/exemple.jpeg" alt="">
-                    </div>
-                    <div class="coverDiv">
-                        <img src="img/exemple.jpeg" alt="">
-                    </div>
-
                 </div>  
             </section>
 
@@ -106,4 +72,18 @@ include_once 'elements/header.inc.php';
 
 <?php include_once 'elements/footer.inc.php'?>
 
+    <!----TippyJS--->
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
+    <!-- Production -->
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!----Scripts--->
+    <script src="scripts/main.js"></script>
+</body>
 </html>

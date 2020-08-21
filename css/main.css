@@ -12,6 +12,9 @@ body #superContainer {
 #mainSection {
   background-color: #08212F; }
 
+#mainFooter footer {
+  font-family: "Inconsolata", monospace; }
+
 /*---------HEADER-------*/
 header {
   padding: 8px;
@@ -48,10 +51,24 @@ header {
   #mainSection #mainSectionMovies {
     padding: 8px; }
     #mainSection #mainSectionMovies .coverDiv {
-      margin: 12px; }
+      padding: 10px;
+      justify-content: center; }
       #mainSection #mainSectionMovies .coverDiv img {
         width: 240px;
         height: 300px; }
+      #mainSection #mainSectionMovies .coverDiv p {
+        font-size: 20px;
+        width: 200px;
+        position: absolute; }
+      #mainSection #mainSectionMovies .coverDiv small {
+        color: #c51b1b;
+        font-size: 12px;
+        text-transform: uppercase;
+        border: 1px solid red;
+        padding-right: 10px;
+        position: absolute;
+        margin-left: 20px;
+        margin-top: 10px; }
     #mainSection #mainSectionMovies .coverDiv:hover {
       border: 3px solid #00466A; }
     #mainSection #mainSectionMovies .topicHeader {
