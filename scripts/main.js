@@ -1,6 +1,6 @@
 //Vars
 let movieDiv = [];
-let maxMovies = 6;
+let maxMovies = 8;
 
 let moviePremieres  = document.getElementById("moviePremieres");
 let movieClassics = document.getElementById("movieClassics");
@@ -31,21 +31,23 @@ tippy.setDefaultProps({
 
 //=========================================================//
 
-
-
 class APIconection{
     static APIconect(id, container)
     {
         this.id = id;
         this.container = container;
+
         let img = 'https://image.tmdb.org/t/p/w300';
 
         //Reading API
-        fetch(linkAPI+this.id+keyAPI)
-        .then(function(res) {
-            return res.json();
+        fetch(linkAPI+this.id+keyAPI).then(function(res) {
+            if(res.ok){
+                return res.json();
+            }else{this.bool = false;}
           })
         .then(data => {
+            
+      
             console.log(data);
 
             let template = 
@@ -60,14 +62,16 @@ class APIconection{
             </p>
             </div>
             `;
-            
+       
+        
 
-            container.innerHTML+=template;
+        container.innerHTML+=template;
+           
 
             tippy(".coverDiv", {
                 content: (reference) => reference.getAttribute('alt'),
-                onShown() {
-                    document.getElementById("mainSection").style.cursor = "help";
+                onCreate() {
+                    mainSection.style.cursor = "help";
                   },
             });
 
@@ -85,17 +89,17 @@ class APIconection{
 
 //Summon in PREMIERES
 for (let i = 0; i < maxMovies; i++) {
-    APIconection.APIconect(i+100, moviePremieres);
+    APIconection.APIconect(i+120, moviePremieres);
 }
 
 //Summon in CLASSICS
 for (let i = 0; i < maxMovies; i++) {
-    APIconection.APIconect(i+200, movieClassics);
+    APIconection.APIconect(i+240, movieClassics);
 }
 
 //Summon in RELEASES
 for (let i = 0; i < maxMovies; i++) {
-    APIconection.APIconect(i+300, movieReleases);
+    APIconection.APIconect(i+340, movieReleases);
 }
 
 

@@ -58,8 +58,7 @@ header {
         height: 300px; }
       #mainSection #mainSectionMovies .coverDiv p {
         font-size: 20px;
-        width: 200px;
-        position: absolute; }
+        width: 200px; }
       #mainSection #mainSectionMovies .coverDiv small {
         color: #c51b1b;
         font-size: 12px;
